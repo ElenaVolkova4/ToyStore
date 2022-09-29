@@ -1,9 +1,14 @@
 * {
   font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .container {
@@ -39,6 +44,10 @@ a {
   gap: 20px;
 }
 
+.contacts .usual_contacts a {
+  color: #ffffff;
+}
+
 .header_menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,7 +66,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 50px;
+}
+
+.header_menu .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
 }
 
 .header_menu .cart {
@@ -80,7 +96,7 @@ a {
   font-size: 12px;
 }
 
-.section_one {
+.section_main {
   background-image: url("../images/bg1.png");
   height: 640px;
   display: -webkit-box;
@@ -92,5 +108,142 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.section_main .main_title {
+  width: 570px;
+  height: 308px;
+  background: #ffffff;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section_main .main_title p {
+  margin-top: 50px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #a5c926;
+}
+
+.section_main .main_title h1 {
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.green_button {
+  background-color: #a5c926;
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 12px 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 152px;
+  gap: 50px;
+}
+
+.sections h3 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.sections .stuffed_animals {
+  width: 570px;
+  height: 188px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffc12c;
+  border-radius: 16px;
+}
+
+.sections .img {
+  position: relative;
+  width: 220px;
+  height: 220px;
+}
+
+.sections .img img {
+  position: absolute;
+  top: calc(50% - 220px / 2 - 42px);
+}
+
+.sections .stuffed_animals_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+  margin-left: 30px;
+}
+
+.sections .wooden_toys {
+  width: 570px;
+  height: 188px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  background: #fb416b;
+  border-radius: 16px;
+}
+
+.sections .wooden_toys_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 30px;
+  margin-left: 70px;
+}
+
+.sections .white_button {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 8px 24px;
+  font-size: 13px;
+  line-height: 24px;
 }
 /*# sourceMappingURL=index.css.map */
