@@ -1,4 +1,13 @@
-.contacts {
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.bg_green {
   background-color: #a5c926;
 }
 /*# sourceMappingURL=index.css.map */

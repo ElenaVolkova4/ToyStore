@@ -1,5 +1,31 @@
 $color_green: #a5c926;
+$color_white: #ffffff;
 
-.contacts {
+//надо ли?
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.bg_green {
   background-color: $color_green;
 }
+
+//header
+
+.header {
+}
+
+// .contacts {
+//   background-color: $color_green;
+// }
