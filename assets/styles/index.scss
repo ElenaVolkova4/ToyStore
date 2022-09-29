@@ -1,12 +1,17 @@
 $color_green: #a5c926;
 $color_white: #ffffff;
 
+@mixin flex {
+  display: flex;
+}
+
 //надо ли?
-// * {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-// }
+* {
+  font-family: "Open Sans", sans-serif;
+  // margin: 0;
+  // padding: 0;
+  // box-sizing: border-box;
+}
 
 a {
   text-decoration: none;
@@ -26,6 +31,59 @@ a {
 .header {
 }
 
-// .contacts {
-//   background-color: $color_green;
-// }
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color_white;
+  height: 32px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+
+  .usual_contacts {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.header_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 72px;
+
+  font-size: 12px;
+
+  .header_menu_flex {
+    display: flex;
+    gap: 20px;
+  }
+
+  .cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .total_products {
+      // display: flex;
+      // align-items: center;
+      text-align: center;
+      border-radius: 50%;
+      background-color: $color_green;
+      width: 20px;
+      height: 20px;
+      color: $color_white;
+      font-size: 12px;
+    }
+  }
+}
+
+.section_one {
+  background-image: url("../images/bg1.png");
+  height: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

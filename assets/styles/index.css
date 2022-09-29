@@ -1,3 +1,7 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -9,5 +13,84 @@ a {
 
 .bg_green {
   background-color: #a5c926;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  height: 32px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.contacts .usual_contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 72px;
+  font-size: 12px;
+}
+
+.header_menu .header_menu_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.header_menu .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.header_menu .cart .total_products {
+  text-align: center;
+  border-radius: 50%;
+  background-color: #a5c926;
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.section_one {
+  background-image: url("../images/bg1.png");
+  height: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=index.css.map */
