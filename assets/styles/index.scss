@@ -339,8 +339,6 @@ a {
   p {
     font-size: 14px;
     line-height: 24px;
-    /* or 171% */
-
     color: #999999;
   }
 }
@@ -418,4 +416,28 @@ a {
     display: flex;
     justify-content: space-between;
   }
+}
+
+.footer {
+  height: 209px;
+}
+
+.footer_menu_flex {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 48px 0px;
+
+  .footer_menu {
+    display: flex;
+    gap: 28px;
+
+    a {
+      color: $color_white;
+    }
+  }
+}
+
+.footer_info {
+  display: flex;
 }
