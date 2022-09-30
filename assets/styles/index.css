@@ -202,18 +202,7 @@ a {
   top: calc(50% - 220px / 2 - 42px);
 }
 
-.sections .toy_section {
-  height: 588px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.sections .toy_section_title {
+.sections .stuffed_animals_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,29 +261,48 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 588px;
+}
+
+.toy_section_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.toy_section h3 {
+.toy_section_title h3 {
   font-family: "Varela Round";
   font-style: normal;
   font-size: 28px;
   line-height: 36px;
 }
 
-.toy_section div {
+.toy_section_title div {
+  padding-bottom: 5px;
   border-bottom: 2px solid #dddddd;
+}
+
+.toy_section_line {
+  padding: 40px 0px;
 }
 
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 30px;
 }
 

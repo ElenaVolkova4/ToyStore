@@ -171,13 +171,7 @@ a {
     }
   }
 
-  .toy_section {
-    height: 588px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .toy_section_title {
+  .stuffed_animals_title {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -218,7 +212,14 @@ a {
 
 .toy_section {
   display: flex;
+  flex-direction: column;
+  height: 588px;
+}
+
+.toy_section_title {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 
   h3 {
     font-family: "Varela Round";
@@ -228,13 +229,18 @@ a {
   }
 
   div {
+    padding-bottom: 5px;
     border-bottom: 2px solid #dddddd;
   }
 }
 
+.toy_section_line {
+  padding: 40px 0px;
+}
+
 .cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
 
   .card {
