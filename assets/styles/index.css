@@ -367,4 +367,55 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.add_section_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 18px;
+  margin-top: 120px;
+  margin-bottom: 95px;
+}
+
+.add_section_title p {
+  font-size: 13px;
+  line-height: 16px;
+  color: #a5c926;
+}
+
+.add_section_title h3 {
+  font-family: "Varela Round";
+  font-style: normal;
+  font-size: 31px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.add_section_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.add_section_content_text h3 {
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 40px;
+}
+
+.add_section_content_text p {
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  color: #999999;
+}
 /*# sourceMappingURL=index.css.map */
