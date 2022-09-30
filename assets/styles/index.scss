@@ -20,7 +20,7 @@ a {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -290,6 +290,10 @@ a {
   justify-content: center;
 }
 
+.add_section {
+  margin-bottom: 120px;
+}
+
 .add_section_title {
   display: flex;
   flex-direction: column;
@@ -315,9 +319,15 @@ a {
 
 .add_section_content {
   display: flex;
+  gap: 199px;
 }
 
 .add_section_content_text {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: flex-start;
+
   h3 {
     font-family: "Varela Round";
     font-style: normal;
@@ -325,11 +335,87 @@ a {
     font-size: 31px;
     line-height: 40px;
   }
+
   p {
     font-size: 14px;
     line-height: 24px;
     /* or 171% */
 
     color: #999999;
+  }
+}
+
+.subscription {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 173px;
+  background: $color_white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+
+  .subscription_text {
+    display: flex;
+    gap: 16px;
+  }
+  p {
+    font-family: "Varela Round";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 32px;
+  }
+
+  p > span {
+    color: $color_green;
+    font-family: "Varela Round";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 32px;
+  }
+
+  .subscription_input {
+    display: flex;
+    gap: 16px;
+
+    input {
+      width: 376px;
+      background: #f8f8f8;
+      border: 2px solid #e5e5e5;
+      border-radius: 24px;
+    }
+  }
+}
+
+.instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 76px;
+  height: 694px;
+
+  .instagram_title {
+    text-align: center;
+    p {
+      font-size: 13px;
+      line-height: 16px;
+      color: $color_green;
+    }
+
+    h3 {
+      padding-top: 17px;
+      font-family: "Varela Round";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 31px;
+      line-height: 40px;
+    }
+  }
+
+  .instagram_photos {
+    display: flex;
+    justify-content: space-between;
   }
 }
