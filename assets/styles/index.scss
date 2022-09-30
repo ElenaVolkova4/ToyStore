@@ -280,3 +280,12 @@ a {
     padding: 2px 12px;
   }
 }
+
+.main_video {
+  background-image: url(../images/bg2.png);
+  background-size: cover;
+  height: 464px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
