@@ -96,8 +96,13 @@ a {
   font-size: 12px;
 }
 
+.main {
+  background: #f8f8f8;
+}
+
 .section_main {
   background-image: url("../images/bg1.png");
+  background-size: cover;
   height: 640px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,8 +162,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 152px;
   gap: 50px;
+  height: 460px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 460px;
+  background: #f8f8f8;
 }
 
 .sections h3 {
@@ -192,7 +202,18 @@ a {
   top: calc(50% - 220px / 2 - 42px);
 }
 
-.sections .stuffed_animals_title {
+.sections .toy_section {
+  height: 588px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sections .toy_section_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,5 +266,82 @@ a {
   padding: 8px 24px;
   font-size: 13px;
   line-height: 24px;
+}
+
+.toy_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.toy_section h3 {
+  font-family: "Varela Round";
+  font-style: normal;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.toy_section div {
+  border-bottom: 2px solid #dddddd;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+.cards .card {
+  width: 270px;
+  height: 328px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+
+.cards .card_img {
+  width: 182px;
+  height: 182px;
+}
+
+.cards .card_img img {
+  width: 100%;
+}
+
+.cards p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cards .price_button {
+  background: #a5c926;
+  border-radius: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 2px 12px;
 }
 /*# sourceMappingURL=index.css.map */

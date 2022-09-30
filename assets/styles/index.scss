@@ -1,5 +1,6 @@
 $color_green: #a5c926;
 $color_white: #ffffff;
+$color_gray: #f8f8f8;
 
 // @mixin flex {
 //   display: flex;
@@ -84,9 +85,13 @@ a {
     }
   }
 }
+.main {
+  background: $color_gray;
+}
 
 .section_main {
   background-image: url("../images/bg1.png");
+  background-size: cover;
   height: 640px;
   display: flex;
   align-items: center;
@@ -133,8 +138,11 @@ a {
 
 .sections {
   display: flex;
-  margin: 152px;
   gap: 50px;
+  height: 460px;
+  align-items: center;
+  height: 460px;
+  background: $color_gray;
 
   h3 {
     font-weight: 400;
@@ -163,7 +171,13 @@ a {
     }
   }
 
-  .stuffed_animals_title {
+  .toy_section {
+    height: 588px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .toy_section_title {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -199,5 +213,64 @@ a {
     padding: 8px 24px;
     font-size: 13px;
     line-height: 24px;
+  }
+}
+
+.toy_section {
+  display: flex;
+  justify-content: space-between;
+
+  h3 {
+    font-family: "Varela Round";
+    font-style: normal;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  div {
+    border-bottom: 2px solid #dddddd;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  .card {
+    width: 270px;
+    height: 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: $color_white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+  }
+
+  .card_img {
+    width: 182px;
+    height: 182px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .price_button {
+    background: $color_green;
+    border-radius: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: $color_white;
+    padding: 2px 12px;
   }
 }
