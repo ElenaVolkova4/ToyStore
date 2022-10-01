@@ -2,8 +2,7 @@
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -21,71 +20,78 @@ a {
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   color: #ffffff;
   height: 32px;
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
 }
-
+@media screen and (max-width: 700px) {
+  .contacts {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contacts {
+    height: auto;
+    flex-direction: column;
+  }
+}
 .contacts .usual_contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
-
 .contacts .usual_contacts a {
   color: #ffffff;
 }
 
 .header_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   height: 72px;
   font-size: 12px;
 }
-
+@media screen and (max-width: 1200px) {
+  .header_menu {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header_menu {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+}
 .header_menu .header_menu_flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 50px;
 }
-
+@media screen and (max-width: 450px) {
+  .header_menu .header_menu_flex {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
 .header_menu .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
-
+@media screen and (max-width: 450px) {
+  .header_menu .menu {
+    gap: 10px;
+  }
+}
 .header_menu .cart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 20px;
 }
-
 .header_menu .cart .total_products {
   text-align: center;
   border-radius: 50%;
@@ -104,41 +110,41 @@ a {
   background-image: url("../images/bg1.png");
   background-size: cover;
   height: 640px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
+@media screen and (max-width: 700px) {
+  .section_main {
+    height: 340px;
+  }
+}
 .section_main .main_title {
   width: 570px;
   height: 308px;
   background: #ffffff;
   border-radius: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
 }
-
+@media screen and (max-width: 700px) {
+  .section_main .main_title {
+    width: 300px;
+    height: 200px;
+  }
+}
 .section_main .main_title p {
   margin-top: 50px;
   font-size: 13px;
   line-height: 16px;
   color: #a5c926;
 }
-
+@media screen and (max-width: 700px) {
+  .section_main .main_title p {
+    margin-top: 10px;
+  }
+}
 .section_main .main_title h1 {
   font-family: "Varela Round", sans-serif;
   font-style: normal;
@@ -146,6 +152,12 @@ a {
   font-size: 39px;
   line-height: 48px;
   text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .section_main .main_title h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 
 .green_button {
@@ -159,134 +171,157 @@ a {
 }
 
 .sections {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 50px;
   height: 460px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  justify-content: center;
   height: 460px;
   background: #f8f8f8;
 }
-
+@media screen and (max-width: 1200px) {
+  .sections {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 0px;
+  }
+}
 .sections h3 {
   font-weight: 400;
   font-size: 28px;
   line-height: 36px;
   color: #ffffff;
 }
-
+@media screen and (max-width: 700px) {
+  .sections h3 {
+    font-size: 20px;
+  }
+}
 .sections .stuffed_animals {
   width: 570px;
   height: 188px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background: #ffc12c;
   border-radius: 16px;
 }
-
+@media screen and (max-width: 700px) {
+  .sections .stuffed_animals {
+    width: 90%;
+    justify-content: center;
+  }
+}
 .sections .img {
   position: relative;
   width: 220px;
   height: 220px;
 }
-
-.sections .img img {
+@media screen and (max-width: 700px) {
+  .sections .img {
+    width: 180px;
+    height: 180px;
+  }
+}
+.sections img {
   position: absolute;
-  top: calc(50% - 220px / 2 - 42px);
+  top: calc(50% - 110px - 42px);
+}
+@media screen and (max-width: 700px) {
+  .sections img {
+    width: 100%;
+    top: 0;
+  }
 }
 
-.sections .stuffed_animals_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.stuffed_animals_title {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 30px;
   margin-left: 30px;
 }
+@media screen and (max-width: 700px) {
+  .stuffed_animals_title {
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
 
-.sections .wooden_toys {
+.wooden_toys {
   width: 570px;
   height: 188px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
   background: #fb416b;
   border-radius: 16px;
 }
+@media screen and (max-width: 700px) {
+  .wooden_toys {
+    width: 90%;
+    justify-content: center;
+  }
+}
 
-.sections .wooden_toys_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.wooden_toys_title {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
   gap: 30px;
   margin-left: 70px;
 }
+@media screen and (max-width: 700px) {
+  .wooden_toys_title {
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 0;
+  }
+}
 
-.sections .white_button {
+.white_button {
   background: #ffffff;
   border-radius: 20px;
   padding: 8px 24px;
   font-size: 13px;
   line-height: 24px;
 }
+@media screen and (max-width: 450px) {
+  .white_button {
+    line-height: 14px;
+    padding: 8px 14px;
+  }
+}
 
 .toy_section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 588px;
+}
+@media screen and (max-width: 1200px) {
+  .toy_section {
+    height: auto;
+  }
 }
 
 .toy_section_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
+@media screen and (max-width: 1200px) {
+  .toy_section_title {
+    justify-content: space-around;
+  }
+}
 .toy_section_title h3 {
   font-family: "Varela Round";
   font-style: normal;
   font-size: 28px;
   line-height: 36px;
 }
-
 .toy_section_title div {
   padding-bottom: 5px;
   border-bottom: 2px solid #dddddd;
@@ -295,54 +330,61 @@ a {
 .toy_section_line {
   padding: 40px 0px;
 }
-
-.cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 30px;
+@media screen and (max-width: 700px) {
+  .toy_section_line {
+    padding: 10px 0px;
+  }
 }
 
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media screen and (max-width: 1200px) {
+  .cards {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 0;
+  }
+}
 .cards .card {
   width: 270px;
   height: 328px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
   background: #ffffff;
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
 }
-
+@media screen and (max-width: 700px) {
+  .cards .card {
+    gap: 5px;
+    width: 160px;
+    height: 200px;
+  }
+}
 .cards .card_img {
   width: 182px;
   height: 182px;
 }
-
+@media screen and (max-width: 700px) {
+  .cards .card_img {
+    width: 120px;
+    height: 120px;
+  }
+}
 .cards .card_img img {
   width: 100%;
 }
-
 .cards p {
   font-size: 14px;
   line-height: 20px;
 }
-
 .cards .price_button {
   background: #a5c926;
   border-radius: 16px;
@@ -353,47 +395,38 @@ a {
   padding: 2px 12px;
 }
 
-.main_video {
-  background-image: url(../images/bg2.png);
-  background-size: cover;
-  height: 464px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.main_video img {
+  width: 100%;
 }
 
 .add_section {
   margin-bottom: 120px;
 }
+@media screen and (max-width: 1200px) {
+  .add_section {
+    margin-bottom: 30px;
+  }
+}
 
 .add_section_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 18px;
   margin-top: 120px;
   margin-bottom: 95px;
 }
-
+@media screen and (max-width: 700px) {
+  .add_section_title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+}
 .add_section_title p {
   font-size: 13px;
   line-height: 16px;
   color: #a5c926;
 }
-
 .add_section_title h3 {
   font-family: "Varela Round";
   font-style: normal;
@@ -403,26 +436,34 @@ a {
 }
 
 .add_section_content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 199px;
 }
-
-.add_section_content_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 26px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+@media screen and (max-width: 1200px) {
+  .add_section_content {
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
+.add_section_content_img > img {
+  width: 100%;
+}
+
+.add_section_content_text {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1200px) {
+  .add_section_content_text {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
 .add_section_content_text h3 {
   font-family: "Varela Round";
   font-style: normal;
@@ -430,36 +471,57 @@ a {
   font-size: 31px;
   line-height: 40px;
 }
-
+@media screen and (max-width: 700px) {
+  .add_section_content_text h3 {
+    text-align: center;
+  }
+}
 .add_section_content_text p {
   font-size: 14px;
   line-height: 24px;
   color: #999999;
 }
-
-.subscription {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 173px;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-  border-radius: 16px;
+@media screen and (max-width: 1200px) {
+  .add_section_content_text p {
+    margin: 0 100px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .add_section_content_text p {
+    margin: 0 10px;
+  }
 }
 
+.subscription {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 173px;
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .subscription {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  .subscription {
+    height: auto;
+    padding: 10px 0px;
+    gap: 10px;
+  }
+}
 .subscription .subscription_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 16px;
 }
-
+@media screen and (max-width: 450px) {
+  .subscription .subscription_text img {
+    display: none;
+  }
+}
 .subscription p {
   font-family: "Varela Round";
   font-style: normal;
@@ -467,7 +529,6 @@ a {
   font-size: 23px;
   line-height: 32px;
 }
-
 .subscription p > span {
   color: #a5c926;
   font-family: "Varela Round";
@@ -476,49 +537,57 @@ a {
   font-size: 23px;
   line-height: 32px;
 }
-
 .subscription .subscription_input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 16px;
 }
-
+@media screen and (max-width: 450px) {
+  .subscription .subscription_input {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
 .subscription .subscription_input input {
   width: 376px;
   background: #f8f8f8;
   border: 2px solid #e5e5e5;
   border-radius: 24px;
 }
+@media screen and (max-width: 700px) {
+  .subscription .subscription_input input {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .subscription .subscription_input input {
+    width: 200px;
+  }
+}
 
 .instagram {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 76px;
   height: 694px;
 }
-
+@media screen and (max-width: 700px) {
+  .instagram {
+    height: auto;
+    gap: 20px;
+    padding: 20px 0;
+  }
+}
 .instagram .instagram_title {
   text-align: center;
 }
-
 .instagram .instagram_title p {
   font-size: 13px;
   line-height: 16px;
   color: #a5c926;
 }
-
 .instagram .instagram_title h3 {
   padding-top: 17px;
   font-family: "Varela Round";
@@ -527,56 +596,72 @@ a {
   font-size: 31px;
   line-height: 40px;
 }
-
 .instagram .instagram_photos {
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-self: stretch;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  .instagram .instagram_photos {
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
 }
 
 .footer {
   height: 209px;
 }
+@media screen and (max-width: 1200px) {
+  .footer {
+    height: auto;
+  }
+}
 
 .footer_menu_flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   padding: 48px 0px;
 }
-
+@media screen and (max-width: 1200px) {
+  .footer_menu_flex {
+    padding: 25px 0px;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer_menu_flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+  }
+}
 .footer_menu_flex .footer_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 28px;
+  font-size: 13px;
 }
-
+@media screen and (max-width: 450px) {
+  .footer_menu_flex .footer_menu {
+    gap: 5px;
+  }
+}
 .footer_menu_flex .footer_menu a {
   color: #ffffff;
 }
 
 .footer_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding-top: 30px;
   color: #ffffff;
 }
-/*# sourceMappingURL=index.css.map */
+@media screen and (max-width: 1200px) {
+  .footer_info {
+    padding: 15px 0px;
+  }
+}/*# sourceMappingURL=index.css.map */

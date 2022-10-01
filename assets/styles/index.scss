@@ -2,16 +2,16 @@ $color_green: #a5c926;
 $color_white: #ffffff;
 $color_gray: #f8f8f8;
 
-// @mixin flex {
-//   display: flex;
-// }
+$desktop: 1200px;
+$tablet: 700px;
+$mobile: 450px;
 
-//надо ли?
 * {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // color: red;
 }
 
 a {
@@ -40,6 +40,15 @@ a {
   font-size: 11px;
   line-height: 16px;
 
+  @media screen and (max-width: $tablet) {
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: $mobile) {
+    height: auto;
+    flex-direction: column;
+  }
+
   .usual_contacts {
     display: flex;
     gap: 20px;
@@ -57,14 +66,34 @@ a {
   height: 72px;
   font-size: 12px;
 
+  @media screen and (max-width: $desktop) {
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
   .header_menu_flex {
     display: flex;
     gap: 50px;
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
   }
 
   .menu {
     display: flex;
     gap: 30px;
+
+    @media screen and (max-width: $mobile) {
+      gap: 10px;
+    }
   }
 
   .cart {
@@ -85,6 +114,7 @@ a {
     }
   }
 }
+
 .main {
   background: $color_gray;
 }
@@ -97,21 +127,33 @@ a {
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: $tablet) {
+    height: 340px;
+  }
+
   .main_title {
     width: 570px;
     height: 308px;
     background: #ffffff;
     border-radius: 16px;
-
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (max-width: $tablet) {
+      width: 300px;
+      height: 200px;
+    }
 
     p {
       margin-top: 50px;
       font-size: 13px;
       line-height: 16px;
       color: $color_green;
+
+      @media screen and (max-width: $tablet) {
+        margin-top: 10px;
+      }
     }
 
     h1 {
@@ -121,6 +163,11 @@ a {
       font-size: 39px;
       line-height: 48px;
       text-align: center;
+
+      @media screen and (max-width: $tablet) {
+        font-size: 25px;
+        line-height: 30px;
+      }
     }
   }
 }
@@ -141,14 +188,30 @@ a {
   gap: 50px;
   height: 460px;
   align-items: center;
+  justify-content: center;
   height: 460px;
   background: $color_gray;
+
+  @media screen and (max-width: $desktop) {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 0px;
+  }
+
+  // @media screen and (max-width: $tablet) {
+  //   padding: 50px 0px;
+  // }
 
   h3 {
     font-weight: 400;
     font-size: 28px;
     line-height: 36px;
     color: $color_white;
+    // color: red;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 20px;
+    }
   }
 
   .stuffed_animals {
@@ -158,6 +221,11 @@ a {
     align-items: center;
     background: #ffc12c;
     border-radius: 16px;
+
+    @media screen and (max-width: $tablet) {
+      width: 90%;
+      justify-content: center;
+    }
   }
 
   .img {
@@ -165,48 +233,81 @@ a {
     width: 220px;
     height: 220px;
 
-    img {
-      position: absolute;
-      top: calc(50% - 220px / 2 - 42px);
+    @media screen and (max-width: $tablet) {
+      width: 180px;
+      height: 180px;
     }
-  }
-
-  .stuffed_animals_title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    margin-left: 30px;
-  }
-
-  .wooden_toys {
-    width: 570px;
-    height: 188px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background: #fb416b;
-    border-radius: 16px;
-    // .img {
-    //   margin-left: 40px;
+    // @media screen and (max-width: $mobile) {
+    //   display: none;
     // }
   }
 
-  .wooden_toys_title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 30px;
-    margin-left: 70px;
-  }
+  img {
+    position: absolute;
+    top: calc(50% - 220px / 2 - 42px);
 
-  .white_button {
-    background: $color_white;
-    border-radius: 20px;
-    padding: 8px 24px;
-    font-size: 13px;
-    line-height: 24px;
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      top: 0;
+    }
+  }
+}
+
+.stuffed_animals_title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  margin-left: 30px;
+
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.wooden_toys {
+  width: 570px;
+  height: 188px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #fb416b;
+  border-radius: 16px;
+
+  @media screen and (max-width: $tablet) {
+    width: 90%;
+    justify-content: center;
+  }
+}
+
+.wooden_toys_title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+  margin-left: 70px;
+
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 0;
+  }
+}
+
+.white_button {
+  background: $color_white;
+  border-radius: 20px;
+  padding: 8px 24px;
+  font-size: 13px;
+  line-height: 24px;
+
+  @media screen and (max-width: $mobile) {
+    line-height: 14px;
+    padding: 8px 14px;
   }
 }
 
@@ -214,12 +315,24 @@ a {
   display: flex;
   flex-direction: column;
   height: 588px;
+
+  @media screen and (max-width: $desktop) {
+    height: auto;
+  }
+
+  // @media screen and (max-width: $tablet) {
+  //   flex-direction: column;
+  // }
 }
 
 .toy_section_title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: $desktop) {
+    justify-content: space-around;
+  }
 
   h3 {
     font-family: "Varela Round";
@@ -236,12 +349,23 @@ a {
 
 .toy_section_line {
   padding: 40px 0px;
+
+  @media screen and (max-width: $tablet) {
+    padding: 10px 0px;
+  }
 }
 
 .cards {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+
+  @media screen and (max-width: $desktop) {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 0;
+  }
 
   .card {
     width: 270px;
@@ -254,11 +378,22 @@ a {
     background: $color_white;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
+
+    @media screen and (max-width: $tablet) {
+      gap: 5px;
+      width: 160px;
+      height: 200px;
+    }
   }
 
   .card_img {
     width: 182px;
     height: 182px;
+
+    @media screen and (max-width: $tablet) {
+      width: 120px;
+      height: 120px;
+    }
 
     img {
       width: 100%;
@@ -281,17 +416,31 @@ a {
   }
 }
 
+// .main_video {
+//   background-image: url(../images/bg2.png);
+//   background-size: cover;
+//   height: 464px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   @media screen and (max-width: $desktop) {
+//     height: auto;
+//   }
+// }
+
 .main_video {
-  background-image: url(../images/bg2.png);
-  background-size: cover;
-  height: 464px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  img {
+    width: 100%;
+  }
 }
 
 .add_section {
   margin-bottom: 120px;
+
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 30px;
+  }
 }
 
 .add_section_title {
@@ -301,6 +450,11 @@ a {
   gap: 18px;
   margin-top: 120px;
   margin-bottom: 95px;
+
+  @media screen and (max-width: $tablet) {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
 
   p {
     font-size: 13px;
@@ -320,6 +474,17 @@ a {
 .add_section_content {
   display: flex;
   gap: 199px;
+
+  @media screen and (max-width: $desktop) {
+    // flex-wrap: wrap;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.add_section_content_img > img {
+  width: 100%;
 }
 
 .add_section_content_text {
@@ -328,18 +493,36 @@ a {
   gap: 26px;
   align-items: flex-start;
 
+  @media screen and (max-width: $desktop) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
   h3 {
     font-family: "Varela Round";
     font-style: normal;
     font-weight: 400;
     font-size: 31px;
     line-height: 40px;
+
+    @media screen and (max-width: $tablet) {
+      text-align: center;
+    }
   }
 
   p {
     font-size: 14px;
     line-height: 24px;
     color: #999999;
+
+    @media screen and (max-width: $desktop) {
+      margin: 0 100px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      margin: 0 10px;
+    }
   }
 }
 
@@ -352,10 +535,27 @@ a {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
 
+  @media screen and (max-width: $desktop) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: $tablet) {
+    height: auto;
+    padding: 10px 0px;
+    gap: 10px;
+  }
+
   .subscription_text {
     display: flex;
     gap: 16px;
+
+    img {
+      @media screen and (max-width: $mobile) {
+        display: none;
+      }
+    }
   }
+
   p {
     font-family: "Varela Round";
     font-style: normal;
@@ -377,11 +577,24 @@ a {
     display: flex;
     gap: 16px;
 
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
     input {
       width: 376px;
       background: #f8f8f8;
       border: 2px solid #e5e5e5;
       border-radius: 24px;
+
+      @media screen and (max-width: $tablet) {
+        width: 300px;
+      }
+      @media screen and (max-width: $mobile) {
+        width: 200px;
+      }
     }
   }
 }
@@ -394,8 +607,15 @@ a {
   gap: 76px;
   height: 694px;
 
+  @media screen and (max-width: $tablet) {
+    height: auto;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
   .instagram_title {
     text-align: center;
+
     p {
       font-size: 13px;
       line-height: 16px;
@@ -416,11 +636,21 @@ a {
     align-self: stretch;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: $desktop) {
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: center;
+    }
   }
 }
 
 .footer {
   height: 209px;
+
+  @media screen and (max-width: $desktop) {
+    height: auto;
+  }
 }
 
 .footer_menu_flex {
@@ -429,9 +659,26 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   padding: 48px 0px;
 
+  @media screen and (max-width: $desktop) {
+    padding: 25px 0px;
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+  }
+
   .footer_menu {
     display: flex;
     gap: 28px;
+    font-size: 13px;
+
+    @media screen and (max-width: $mobile) {
+      gap: 5px;
+    }
 
     a {
       color: $color_white;
@@ -446,4 +693,8 @@ a {
   align-items: center;
   padding-top: 30px;
   color: $color_white;
+
+  @media screen and (max-width: $desktop) {
+    padding: 15px 0px;
+  }
 }
