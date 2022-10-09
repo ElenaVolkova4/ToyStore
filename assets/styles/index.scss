@@ -121,8 +121,6 @@ body {
     gap: 20px;
 
     .total_products {
-      // display: flex;
-      // align-items: center;
       text-align: center;
       border-radius: 50%;
       background-color: $color_green;
@@ -217,16 +215,11 @@ body {
     padding: 50px 0px;
   }
 
-  // @media screen and (max-width: $tablet) {
-  //   padding: 50px 0px;
-  // }
-
   h3 {
     font-weight: 400;
     font-size: 28px;
     line-height: 36px;
     color: $color_white;
-    // color: red;
 
     @media screen and (max-width: $tablet) {
       font-size: 20px;
@@ -256,9 +249,6 @@ body {
       width: 180px;
       height: 180px;
     }
-    // @media screen and (max-width: $mobile) {
-    //   display: none;
-    // }
   }
 
   img {
